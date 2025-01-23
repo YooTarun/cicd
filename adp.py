@@ -15,3 +15,7 @@ def read_item(item_id: int, q: str = None):
 @app.get("/greet/{name}")
 def greet_user(name: str):
     return {"greeting": f"Hello, {name}!"}
+
+@app.get("/name/{names}")
+def print_names(names: str):
+    return {"names": names}
